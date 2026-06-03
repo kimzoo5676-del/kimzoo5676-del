@@ -8,6 +8,15 @@
   </a>
 </p>
 
+---
+
+## 📚 Education
+
+| 기간 | 소속 |
+|------|------|
+| 2019.03 - 2025.08 | 한양대학교 ERICA 경제학부 (졸업) |
+| 2026.01 - | 삼성청년SW아카데미 SSAFY 15기 |
+
 <!--
 **kimzoo5676-del/kimzoo5676-del** is a ✨ _special_ ✨ repository because its `README.md` (this file) appears on your GitHub profile.
 
