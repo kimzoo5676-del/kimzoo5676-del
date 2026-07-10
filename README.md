@@ -24,7 +24,7 @@
 
 | 기간 | 프로젝트 | 역할 | 링크 |
 |:---:|:---|:---:|:---:|
-| `2026.05 -` | 사회초년생을 위한 예·적금 추천 서비스<br>**OURWISH** | Backend / AI | [🔗 site](https://our-wish.site/) · [🐱 github](https://github.com/Our-Wish/ourwish) |
+| `2026.05 -` | 사회초년생을 위한 예·적금 추천 서비스<br>**OURWISH** | Backend / AI | [⛓️ site](https://our-wish.site/) · [🐈‍⬛ github](https://github.com/Our-Wish/ourwish) |
 
 ---
 
