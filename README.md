@@ -1,4 +1,4 @@
-![header](https://capsule-render.vercel.app/api?type=soft&color=660033&height=200&section=header&text=joowoo%27s%20github&fontSize=40&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Fullstack%20Learning%20%C2%B7%20Aspiring%20DevOps%20Engineer&descSize=16&descAlignY=65)
+![header](https://capsule-render.vercel.app/api?type=soft&color=660033&height=200&section=header&text=joowoo%27s%20github&fontSize=40&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Backend%20Developer&descSize=16&descAlignY=65)
 
 <p align="center">
   <a href="https://kimzoo5676-del.github.io/">
