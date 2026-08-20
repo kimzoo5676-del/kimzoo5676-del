@@ -48,7 +48,6 @@
 - **인프라·배포** — Oracle Cloud(ARM)로 서버 이관, Blue/Green 무중단 배포와 자동 롤백 구성
 - **AI 투두 추천 서버** — FastAPI + LangGraph 파이프라인(자료 선별 → 후보 생성 → 의미 중복 제거) 개발
 - **iOS 릴리스** — TestFlight 배포와 App Store 심사 제출까지 담당
-- **링크 크롤링** — 사이트별 크롤러 + 공통 폴백 구조로 본문·썸네일 수집, SSRF 방어와 비동기 재시도·차단 쿨다운 설계
 
 
 <br>
@@ -67,7 +66,7 @@
 > 생성형 AI와 금융 데이터를 활용해 사용자에게 맞는 예·적금 상품을 추천하는 로보 어드바이저 서비스.
 > **SSAFY 1학기 관통 프로젝트 최우수상 (서울2반 1등).**
 
-**Role** · Backend / Infra / AI &nbsp;&nbsp;|&nbsp;&nbsp; `Django` `DRF` `Vue.js` `SQLite` `AWS EC2`
+**Role** · Backend / AI &nbsp;&nbsp;|&nbsp;&nbsp; `Django` `DRF` `Vue.js` `SQLite` `AWS EC2`
 
 - **REST API·DB 설계** — DRF로 REST API와 JWT 인증 구현, 회원·상품·가입·찜·커뮤니티 5개 도메인 ERD 모델링
 - **추천 알고리즘** — 금융감독원(FSS) API로 예·적금 상품 766건 수집, 프로필 기반 필터링 + 세후 실수령액 계산·정렬로 추천 구현
@@ -117,9 +116,11 @@
 ![Oracle Cloud](https://img.shields.io/badge/Oracle%20Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white)
 ![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
 ![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
+![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
 ![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=for-the-badge&logo=caddy&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
 
 **Tools**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
 ![GitHub](https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white)
+![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
