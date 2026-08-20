@@ -66,7 +66,7 @@
 > 생성형 AI와 금융 데이터를 활용해 사용자에게 맞는 예·적금 상품을 추천하는 로보 어드바이저 서비스.
 > **SSAFY 1학기 관통 프로젝트 최우수상 (서울2반 1등).**
 
-**Role** · Backend / AI &nbsp;&nbsp;|&nbsp;&nbsp; `Django` `DRF` `Vue.js` `SQLite` `AWS EC2`
+**Role** · Backend / Infra / AI &nbsp;&nbsp;|&nbsp;&nbsp; `Django` `DRF` `Vue.js` `SQLite` `AWS EC2`
 
 - **REST API·DB 설계** — DRF로 REST API와 JWT 인증 구현, 회원·상품·가입·찜·커뮤니티 5개 도메인 ERD 모델링
 - **추천 알고리즘** — 금융감독원(FSS) API로 예·적금 상품 766건 수집, 프로필 기반 필터링 + 세후 실수령액 계산·정렬로 추천 구현
