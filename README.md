@@ -52,6 +52,30 @@
 
 <br>
 
+### 🏦 여보 (여신보좌관) — 기업여신 AI 업무 보조 서비스 &nbsp;`2026.08 - 2026.09`
+
+<p>
+  <a href="https://github.com/kimzoo5676-del/loanreview/blob/main/docs/presentation/yeobo-presentation.pdf">
+    <img src="https://img.shields.io/badge/Slides-660033?style=for-the-badge&logo=googleslides&logoColor=white" alt="Slides"/>
+  </a>
+  <a href="https://github.com/kimzoo5676-del/loanreview">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
+
+> 은행 심사 담당자가 스타트업 법인의 서류 10종을 심사할 때 **서류 판독 → 서류 간 대조 → 위험 점검 → 등급·한도 → 심사의견서 초고**까지 보조하는 AI 서비스.
+> **계산은 규칙이, 설명과 초고는 AI 가, 판단·확정은 담당자가.** SSAFY 2학기 프로젝트 · 5인 팀.
+
+**Role** · Infra / Backend &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `Spring Security` `PostgreSQL` `Docker Swarm` `Jenkins` `GitLab CI` `Prometheus` `Grafana` `AWS Lightsail`
+
+- **무중단 배포·CI/CD** — Docker Swarm start-first 무중단 배포, Jenkins 자동 배포와 되돌리기, GitLab Runner CI 게이트(포맷·린트·테스트·빌드·시크릿 스캔)
+- **관측** — Prometheus·Loki·Grafana 로 지표와 컨테이너 로그를 모아 운영 대시보드 구성
+- **로그인·접근 제어** — SSAFY 통합인증 + DB 세션 + CSRF + TOTP 2차 인증, 담당자별 접근 제어와 감사부 열람
+- **감사 로그** — SHA-256 해시 체인 · DB 권한 분리 · 트리거로 수정·삭제를 막고, 체인 검증 API 로 변조 위치를 찾음
+
+
+<br>
+
 ### 💰 OURWISH — 사회초년생을 위한 예·적금 추천 서비스 &nbsp;`2026.05 - 2026.06`
 
 <p>
