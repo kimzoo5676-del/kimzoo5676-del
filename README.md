@@ -52,6 +52,30 @@
 
 <br>
 
+### 🌌 Zoolog — 공부 기록 그래프 블로그 &nbsp;`2026.10 -`
+
+<p>
+  <a href="https://zoolog.site/">
+    <img src="https://img.shields.io/badge/Website-660033?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+  </a>
+  <a href="https://github.com/kimzoo5676-del/Zoolog">
+    <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
+  </a>
+</p>
+
+> 공부 글을 주제 3단계로 정리해 **별자리 그래프로 보여 주고, 글 쓴 날을 주제별 달력에 쌓아 가는** 개인 블로그.
+> **기획 · 디자인 · 백엔드 · 프론트 · 인프라를 혼자 만들어 https://zoolog.site 에서 운영 중.**
+
+**Role** · 1인 개발 (Infra / Backend / Frontend) &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `PostgreSQL` `React` `TypeScript` `k3s` `Argo CD` `GitHub Actions` `Caddy` `AWS Lightsail`
+
+- **GitOps 배포** — GitHub Actions(통합 테스트 → 이미지 빌드 → 매니페스트 태그 커밋) + Argo CD로 push만으로 k3s에 반영, `git revert`로 되돌리기
+- **2GB 서버 운영 설계** — 컨테이너별 메모리 상한과 Argo CD core 설치로 서버 1대에 구성, 화면 서버 RollingUpdate로 배포 중 응답 실패 0회(1초 간격 측정)
+- **아침 기사 메일 · 뉴스 스크랩** — Google 뉴스 RSS · 네이버 검색으로 후보를 모아 규칙 기반 선정, 못 보낸 날 재발송, 메일 링크로 코멘트를 달면 블로그 글로 게시(같은 기사 중복 방지)
+- **그래프 홈** — 힘 기반 배치(force-directed)로 수백 개 글도 겹치지 않는 별자리 그래프, View Transition으로 화면 사이 제목이 이어지는 전환
+
+
+<br>
+
 ### 🏦 여보 (여신보좌관) — 기업여신 AI 업무 보조 서비스 &nbsp;`2026.08 - 2026.09`
 
 <p>
@@ -130,6 +154,8 @@
 
 **Frontend**  
 ![Vue.js](https://img.shields.io/badge/Vue.js-4FC08D?style=for-the-badge&logo=vue.js&logoColor=white)
+![React](https://img.shields.io/badge/React-61DAFB?style=for-the-badge&logo=react&logoColor=black)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 **Database & Storage**  
 ![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
@@ -141,6 +167,8 @@
 **Infra & Cloud**  
 ![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
 ![Docker Swarm](https://img.shields.io/badge/Docker%20Swarm-2496ED?style=for-the-badge&logo=docker&logoColor=white)
+![K3s](https://img.shields.io/badge/K3s-FFC61C?style=for-the-badge&logo=k3s&logoColor=black)
+![Argo CD](https://img.shields.io/badge/Argo%20CD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
 ![AWS EC2](https://img.shields.io/badge/AWS%20EC2-FF9900?style=for-the-badge&logo=amazonec2&logoColor=white)
 ![AWS Lightsail](https://img.shields.io/badge/AWS%20Lightsail-FF9900?style=for-the-badge&logoColor=white)
 ![Oracle Cloud](https://img.shields.io/badge/Oracle%20Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white)
