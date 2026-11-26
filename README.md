@@ -5,7 +5,7 @@
     <img src="https://img.shields.io/badge/Portfolio-660033?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/>
   </a>
   <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-infra-portfolio.pdf">
-    <img src="https://img.shields.io/badge/Infra%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="Infra Portfolio PDF"/>
+    <img src="https://img.shields.io/badge/Cloud%20Engineer%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="Cloud Engineer Portfolio PDF"/>
   </a>
   <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-sw-portfolio.pdf">
     <img src="https://img.shields.io/badge/SW%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="SW Portfolio PDF"/>
