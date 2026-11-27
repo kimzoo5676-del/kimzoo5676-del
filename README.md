@@ -8,7 +8,7 @@
     <img src="https://img.shields.io/badge/Cloud%20Engineer%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="Cloud Engineer Portfolio PDF"/>
   </a>
   <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-sw-portfolio.pdf">
-    <img src="https://img.shields.io/badge/SW%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="SW Portfolio PDF"/>
+    <img src="https://img.shields.io/badge/Software%20Engineer%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="Software Engineer Portfolio PDF"/>
   </a>
   <a href="https://velog.io/@zooouu/posts">
     <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white" alt="Velog"/>
@@ -79,14 +79,15 @@
 > 방을 만들어 팀이 **목표 기간 동안 할 일 · 일정 · 자료를 공유**하는 iOS 협업 앱.
 > App Store 출시 후 운영 중.
 
-**Role** · Infra · AI &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `FastAPI` `PostgreSQL` `Redis` `Docker` `GitHub Actions` `Caddy` `Oracle Cloud`
+**Role** · Infra · BE · AI &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `FastAPI` `PostgreSQL` `Redis` `Docker` `GitHub Actions` `Caddy` `Oracle Cloud`
 
 
 - **CI/CD** — Oracle Cloud(ARM) 이관과 함께 GitHub Actions 워크플로로 재구성, 테스트를 통과한 코드만 배포
 - **blue/green 배포** — 새 버전이 헬스체크를 통과한 뒤 Caddy로 트래픽 전환, 이전 버전 컨테이너는 롤백용으로 유지
 - **백업 · 복구** — PostgreSQL과 파일 저장소(MinIO)를 매일 백업, 임시 컨테이너 복구로 테이블 20개 행 수 일치 확인
-- **크롤링 파이프라인** — 링크 등록은 접수만 하고 크롤링 · 요약은 비동기 처리, 사이트별 크롤러와 재시도 정책, 등록 시점 주소 검증
-- **AI 할 일 추천** — 방에 모인 자료로 할 일 후보를 만드는 FastAPI 서버, 평가 러너로 변경마다 측정해 LLM 1회 호출 구조로 정리
+- **크롤링 파이프라인** — 사이트별 크롤러 분배, 실패를 재시도 대상 · 쿨다운 보류 · 확정 실패로 나눈 재시도와 Redis 쿨다운, 등록 시점 주소 검증
+- **인스타그램 크롤러 장애** — 가설 6개를 하나씩 검증해 Java 클라이언트 접속 지문으로 원인을 확정, 호출 2곳만 HTTP/2 클라이언트로 교체
+- **AI 할 일 추천** — 방에 모인 자료로 할 일 후보를 만드는 FastAPI 서버, 평가 러너로 변경마다 측정해 LLM 1회 호출 구조로 정리(앱 실측 평균 28.2초 → 11.8초, 각 3회)
 - **iOS 릴리스** — TestFlight 배포와 App Store 심사 제출
 
 
@@ -109,6 +110,9 @@
 **Role** · Infra · Full-Stack &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `PostgreSQL` `React` `TypeScript` `k3s` `Argo CD` `GitHub Actions` `Caddy` `AWS Lightsail`
 
 - **GitOps 배포** — GitHub Actions(통합 테스트 → 이미지 빌드 → 매니페스트 태그 커밋)와 Argo CD로 k3s에 배포, 롤백은 `git revert`
+- **로그인** — Google OIDC와 허용 이메일 하나로 본인만 글을 쓰게 하고, 서버 세션과 CSRF 보호 적용
+- **글-이미지 연결 테이블** — 글 ID 컬럼 하나를 다대다 연결 테이블로 바꿔, 연결이 모두 끊긴 이미지만 유예 기간 뒤 정리
+- **기사 메일 재발송** — 보낸 날 기록(UNIQUE)과 서버 시작 · 매시 정각 확인으로 서버가 꺼져 있던 날도 재발송
 
 
 <br>
@@ -133,6 +137,7 @@
 - **관측** — Prometheus · Loki · Grafana로 지표와 컨테이너 로그를 수집해 운영 대시보드 구성
 - **로그인 · 접근 제어** — SSAFY 통합인증, DB 세션, CSRF, TOTP 2차 인증, 담당자별 접근 제어와 감사부 열람
 - **감사 로그** — SHA-256 해시 체인 · DB 권한 분리 · 트리거로 수정 · 삭제 차단, 체인 검증 API로 변조 위치 확인
+- **값 계약 테스트** — 프론트 테스트가 백엔드 enum 파일을 직접 읽어 값과 순서를 비교, 어긋나면 머지 전 CI에서 실패
 
 
 <br>
@@ -174,6 +179,7 @@
 **Language**  
 ![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
 ![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
+![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
 
 **Backend**  
 ![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
@@ -210,9 +216,10 @@
 ![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=for-the-badge&logo=tailscale&logoColor=white)
 ![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
 
-**Monitoring**  
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
+**Test**  
+![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
+![Testcontainers](https://img.shields.io/badge/Testcontainers-291A3F?style=for-the-badge&logoColor=white)
+![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
 
 **Tools**  
 ![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
