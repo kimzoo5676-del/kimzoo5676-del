@@ -27,7 +27,7 @@
 
 <p>
   <a href="https://newlearn.io.kr">
-    <img src="https://img.shields.io/badge/Website-660033?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+    <img src="https://img.shields.io/badge/Website-3574F0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
   </a>
   <a href="https://newlearn-issue.vercel.app/home">
     <img src="https://img.shields.io/badge/Demo-000000?style=for-the-badge&logo=vercel&logoColor=white" alt="Demo"/>
@@ -60,7 +60,7 @@
     <img src="https://img.shields.io/badge/App%20Store-0D96F6?style=for-the-badge&logo=appstore&logoColor=white" alt="App Store"/>
   </a>
   <a href="https://maramodi.cloud/">
-    <img src="https://img.shields.io/badge/Website-660033?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+    <img src="https://img.shields.io/badge/Website-3574F0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
   </a>
   <a href="https://github.com/intpsquad/modi">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
@@ -90,7 +90,7 @@
 
 <p>
   <a href="https://zoolog.site/">
-    <img src="https://img.shields.io/badge/Website-660033?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+    <img src="https://img.shields.io/badge/Website-3574F0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
   </a>
   <a href="https://github.com/kimzoo5676-del/Zoolog">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
@@ -116,7 +116,7 @@
 
 <p>
   <a href="https://github.com/kimzoo5676-del/loanreview/blob/main/docs/presentation/yeobo-presentation.pdf">
-    <img src="https://img.shields.io/badge/Slides-660033?style=for-the-badge&logo=googleslides&logoColor=white" alt="Slides"/>
+    <img src="https://img.shields.io/badge/Slides-3574F0?style=for-the-badge&logo=googleslides&logoColor=white" alt="Slides"/>
   </a>
   <a href="https://github.com/kimzoo5676-del/loanreview">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
@@ -143,7 +143,7 @@
 
 <p>
   <a href="https://our-wish.site/">
-    <img src="https://img.shields.io/badge/Website-660033?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
+    <img src="https://img.shields.io/badge/Website-3574F0?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Website"/>
   </a>
   <a href="https://github.com/Our-Wish/ourwish">
     <img src="https://img.shields.io/badge/GitHub-181717?style=for-the-badge&logo=github&logoColor=white" alt="GitHub"/>
