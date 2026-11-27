@@ -68,11 +68,11 @@ TOP = [
      ('velog', 'velog', 'Velog', '@zooouu', 'https://velog.io/@zooouu/posts'),
      ('mail', 'mail', 'Email', 'kimzoo5676@gmail.com', 'mailto:kimzoo5676@gmail.com')],
 ]
-EDU = [('2026.01 – 2026.12', '삼성청년SW·AI아카데미 15기', '12월 수료 예정'),
+EDU = [('2026.01 – 2026.12', '삼성청년SW·AI아카데미(SSAFY) 15기', '12월 수료 예정'),
        ('2019.03 – 2025.08', '한양대학교 ERICA 경제학부', '졸업')]
-AWARDS = [('2026.11', '2학기 자율 프로젝트 우수상 (3위)', 'NEW:LEARN'),
+AWARDS = [('2026.11', 'SSAFY 2학기 자율 프로젝트 우수상 (3위)', 'NEW:LEARN'),
           ('2026.07', '싸피레이스 2026 SUMMER 2위', 'AirSim 기반 주행 봇 타임어택 · 팀 길이NullNull하네'),
-          ('2026.06', '1학기 관통 프로젝트 최우수상 (서울2반 1등)', 'OURWISH')]
+          ('2026.06', 'SSAFY 1학기 관통 프로젝트 최우수상 (서울2반 1위)', 'OURWISH')]
 LINK = {'website': ('globe', 'Website'), 'demo': ('play', 'Demo'), 'github': ('github.svg', 'GitHub'),
         'appstore': ('apple.svg', 'App Store'), 'slides': ('slides', 'Slides')}
 S = lambda f, l: (f, l)
@@ -80,7 +80,7 @@ PROJECTS = [
     dict(key='newlearn', logo='newlearn.png', name='NEW:LEARN', sub='뉴스를 AI로 구조화해 사건과 이슈의 흐름으로 보여 주는 서비스',
          period='2026.10 – 2026.11', chips=['SSAFY 2학기 · 6인', 'Infra · BE'],
          links=[('demo', 'https://newlearn-issue.vercel.app/home'), ('github', 'https://github.com/a102-NEWLEARN/NEW-LEARN')],
-         stack=[S('java.svg', 'Java'), S('spring.svg', 'Spring Boot'), S('postgresql.svg', 'PostgreSQL'), S('redis.svg', 'Redis'), S('kubernetes.svg', 'Kubernetes'), S('argocd.svg', 'Argo CD'), S('terraform.svg', 'Terraform')],
+         stack=[S('kubernetes.svg', 'Kubernetes'), S('argocd.svg', 'Argo CD'), S('terraform.svg', 'Terraform'), S('java.svg', 'Java'), S('spring.svg', 'Spring Boot'), S('postgresql.svg', 'PostgreSQL'), S('redis.svg', 'Redis')],
          bullets=[
              '**클러스터 구성** — 서버 2대를 WireGuard로 연결해 kubeadm 클러스터 하나로 운영, EC2 · 보안 그룹 · 백업 S3 버킷은 Terraform으로 관리',
              '**GitOps 배포** — MR 검사 → 이미지 빌드(Kaniko) → 배포 태그 MR → Argo CD 동기화, 롤백은 `git revert`',
@@ -91,48 +91,48 @@ PROJECTS = [
     dict(key='modi', logo='modi.png', name='모디 (MODI)', sub='방을 만들어 팀이 목표 기간 동안 할 일 · 일정 · 자료를 공유하는 iOS 협업 앱',
          period='2026.07 – 운영 중', chips=['App Store 출시 · 6인', 'Infra · BE · AI'],
          links=[('appstore', 'https://apps.apple.com/kr/app/id6801031228'), ('website', 'https://maramodi.cloud/'), ('github', 'https://github.com/intpsquad/modi')],
-         stack=[S('spring.svg', 'Spring Boot'), S('fastapi.svg', 'FastAPI'), S('postgresql.svg', 'PostgreSQL'), S('redis.svg', 'Redis'), S('docker.svg', 'Docker'), S('githubactions.svg', 'GitHub Actions'), S('oracle.svg', 'Oracle Cloud')],
+         stack=[S('docker.svg', 'Docker'), S('githubactions.svg', 'GitHub Actions'), S('oracle.svg', 'Oracle Cloud'), S('spring.svg', 'Spring Boot'), S('fastapi.svg', 'FastAPI'), S('postgresql.svg', 'PostgreSQL'), S('redis.svg', 'Redis')],
          bullets=[
              '**CI/CD** — Oracle Cloud(ARM) 이관과 함께 GitHub Actions 워크플로로 재구성, 테스트를 통과한 코드만 배포',
              '**blue/green 배포** — 새 버전이 헬스체크를 통과한 뒤 Caddy로 트래픽 전환, 이전 버전 컨테이너는 롤백용으로 유지',
              '**백업 · 복구** — PostgreSQL과 파일 저장소(MinIO)를 매일 백업, 임시 컨테이너 복구로 테이블 20개 행 수 일치 확인',
              '**크롤링 파이프라인** — 사이트별 크롤러 분배, 실패를 재시도 대상 · 쿨다운 보류 · 확정 실패로 나눈 재시도와 Redis 쿨다운, 등록 시점 주소 검증',
-             '**인스타그램 크롤러 장애** — 가설 6개를 하나씩 검증해 Java 클라이언트 접속 지문으로 원인을 확정, 호출 2곳만 HTTP/2 클라이언트로 교체',
+             '**인스타그램 크롤러 장애** — 가설 6개를 하나씩 검증해 Java 기본 클라이언트의 TLS · HTTP 접속 지문으로 원인을 확정, 호출 2곳만 HTTP/2 클라이언트로 교체',
              '**AI 할 일 추천** — 방에 모인 자료로 할 일 후보를 만드는 FastAPI 서버, 평가 러너로 변경마다 측정해 LLM 1회 호출 구조로 정리(앱 실측 평균 28.2초 → 11.8초, 각 3회)',
              '**iOS 릴리스** — TestFlight 배포와 App Store 심사 제출']),
     dict(key='zoolog', logo='zoolog.svg', name='Zoolog', sub='공부한 글을 주제별 그래프와 달력으로 정리하는 개인 기술 블로그',
          period='2026.10 – 운영 중', chips=['개인 프로젝트 · 1인', 'Infra · Full-Stack'],
          links=[('website', 'https://zoolog.site/'), ('github', 'https://github.com/kimzoo5676-del/Zoolog')],
-         stack=[S('spring.svg', 'Spring Boot'), S('react.svg', 'React'), S('typescript.svg', 'TypeScript'), S('postgresql.svg', 'PostgreSQL'), S('k3s.svg', 'k3s'), S('argocd.svg', 'Argo CD')],
+         stack=[S('k3s.svg', 'k3s'), S('argocd.svg', 'Argo CD'), S('spring.svg', 'Spring Boot'), S('react.svg', 'React'), S('typescript.svg', 'TypeScript'), S('postgresql.svg', 'PostgreSQL')],
          bullets=[
              '**GitOps 배포** — GitHub Actions(통합 테스트 → 이미지 빌드 → 매니페스트 태그 커밋)와 Argo CD로 k3s에 배포, 롤백은 `git revert`',
-             '**로그인** — Google OIDC와 허용 이메일 하나로 본인만 글을 쓰게 하고, 서버 세션과 CSRF 보호 적용',
+             '**로그인** — Google OIDC와 허용 이메일 하나로 작성 권한 제한, 서버 세션과 CSRF 보호 적용',
              '**글-이미지 연결 테이블** — 글 ID 컬럼 하나를 다대다 연결 테이블로 바꿔, 연결이 모두 끊긴 이미지만 유예 기간 뒤 정리',
-             '**기사 메일 재발송** — 보낸 날 기록(UNIQUE)과 서버 시작 · 매시 정각 확인으로 서버가 꺼져 있던 날도 재발송']),
+             '**매일 아침 기사 메일 재발송** — 보낸 날 기록(UNIQUE)과 서버 시작 · 매시 정각 확인으로 서버가 꺼져 있던 날도 재발송']),
     dict(key='yeobo', logo='yeosin.svg', name='여보 (여신보좌관)', sub='스타트업 법인 서류 판독부터 심사의견서 초고까지 은행 여신 심사를 보조하는 AI 서비스',
          period='2026.08 – 2026.09', chips=['SSAFY 2학기 · 5인', 'Infra · BE'],
          links=[('slides', 'https://github.com/kimzoo5676-del/loanreview/blob/main/docs/presentation/yeobo-presentation.pdf'), ('github', 'https://github.com/kimzoo5676-del/loanreview')],
-         stack=[S('spring.svg', 'Spring Boot'), S('postgresql.svg', 'PostgreSQL'), S('fastapi.svg', 'FastAPI'), S('docker.svg', 'Docker Swarm'), S('jenkins.svg', 'Jenkins'), S('prometheus.svg', 'Prometheus')],
+         stack=[S('docker.svg', 'Docker Swarm'), S('jenkins.svg', 'Jenkins'), S('prometheus.svg', 'Prometheus'), S('spring.svg', 'Spring Boot'), S('postgresql.svg', 'PostgreSQL'), S('fastapi.svg', 'FastAPI')],
          bullets=[
              '**무중단 배포 · CI/CD** — Docker Swarm start-first 무중단 배포, Jenkins 자동 배포와 롤백, GitLab Runner CI 게이트(포맷 · 린트 · 테스트 · 빌드 · 시크릿 스캔)',
              '**관측** — Prometheus · Loki · Grafana로 지표와 컨테이너 로그를 수집해 운영 대시보드 구성',
              '**로그인 · 접근 제어** — SSAFY 통합인증, DB 세션, CSRF, TOTP 2차 인증, 담당자별 접근 제어와 감사부 열람',
              '**감사 로그** — SHA-256 해시 체인 · DB 권한 분리 · 트리거로 수정 · 삭제 차단, 체인 검증 API로 변조 위치 확인',
-             '**값 계약 테스트** — 프론트 테스트가 백엔드 enum 파일을 직접 읽어 값과 순서를 비교, 어긋나면 머지 전 CI에서 실패']),
+             '**enum 값 계약 테스트** — 프론트 테스트가 백엔드 enum 파일을 직접 읽어 값과 순서를 비교, 어긋나면 머지 전 CI에서 실패']),
     dict(key='ourwish', logo='ourwish.png', name='OURWISH', sub='생성형 AI와 금융 데이터로 사용자에게 맞는 예·적금 상품을 추천하는 서비스',
          period='2026.05 – 2026.06', chips=['SSAFY 1학기 · 2인 · 최우수상', 'Infra · BE · AI'],
          links=[('website', 'https://our-wish.site/'), ('github', 'https://github.com/Our-Wish/ourwish')],
-         stack=[S('django.svg', 'Django'), S('drf.svg', 'DRF'), S('vue.svg', 'Vue.js'), S('sqlite.svg', 'SQLite'), S('githubactions.svg', 'GitHub Actions'), S('aws.svg', 'AWS EC2')],
+         stack=[S('githubactions.svg', 'GitHub Actions'), S('aws.svg', 'AWS EC2'), S('django.svg', 'Django'), S('drf.svg', 'DRF'), S('vue.svg', 'Vue.js'), S('sqlite.svg', 'SQLite')],
          bullets=[
              '**배포** — GitHub Actions로 CI/CD를 구성하고 AWS EC2(Nginx · Gunicorn)에 배포, 헬스체크 실패 시 직전 커밋으로 롤백',
              '**REST API · DB 설계** — DRF로 REST API와 JWT 인증 구현, 회원 · 상품 · 가입 · 찜 · 커뮤니티 5개 도메인 ERD 모델링',
              '**추천 파이프라인** — 금융감독원 API로 예·적금 상품 766건 수집, 우대조건을 태그 8개로 사전 구조화, 조건 필터링 후 세후 수령액 순 정렬',
              '**스트리밍 챗봇** — 상품 데이터로 답변 근거를 한정하고 SSE로 응답, 대화는 서버에 저장하지 않고 최근 5턴만 전달']),
 ]
-CORE = [('Language', [S('java.svg', 'Java'), S('python.svg', 'Python'), S('typescript.svg', 'TypeScript')]),
+CORE = [('Infra', [S('docker.svg', 'Docker'), S('kubernetes.svg', 'Kubernetes'), S('aws.svg', 'AWS'), S('terraform.svg', 'Terraform'), S('argocd.svg', 'Argo CD'), S('prometheus.svg', 'Prometheus'), S('githubactions.svg', 'GitHub Actions')]),
         ('Backend', [S('spring.svg', 'Spring Boot'), S('fastapi.svg', 'FastAPI'), S('django.svg', 'Django')]),
         ('Data', [S('postgresql.svg', 'PostgreSQL'), S('redis.svg', 'Redis'), S('flyway.svg', 'Flyway')]),
-        ('Infra', [S('docker.svg', 'Docker'), S('kubernetes.svg', 'Kubernetes'), S('aws.svg', 'AWS'), S('terraform.svg', 'Terraform'), S('argocd.svg', 'Argo CD'), S('prometheus.svg', 'Prometheus'), S('githubactions.svg', 'GitHub Actions')])]
+        ('Language', [S('java.svg', 'Java'), S('python.svg', 'Python'), S('typescript.svg', 'TypeScript')])]
 SECTIONS = {'education': ('Education', '~/kimjoowoo/education'), 'projects': ('Projects', '~/kimjoowoo/projects'),
             'awards': ('Awards', '~/kimjoowoo/awards'), 'stack': ('Core Stack', '~/kimjoowoo/stack')}
 
@@ -168,10 +168,14 @@ def icon_html(i):
     return '<img src="%s">' % ic(i) if i.endswith('.svg') else '<svg viewBox="0 0 24 24">%s</svg>' % SVG[i]
 
 
+BTN_COL = [(306, 10, 6), (308, 9, 9), (306, 6, 10)]  # (캔버스 폭, 왼쪽 여백, 오른쪽 여백): 합 920, 바깥 10은 카드 여백과 같다
+
+
 def top_buttons():
     for row in TOP:
-        for k, i, t, s, _ in row:
-            shot('btn-' + k, BTN_CSS + '<div class="b" style="width:248px;height:56px">%s<div><div class="t">%s</div><div class="s">%s</div></div></div>' % (icon_html(i), t, s), 248, 56)
+        for c, (k, i, t, s, _) in enumerate(row):
+            w, l, r = BTN_COL[c]
+            shot('btn-' + k, BTN_CSS + '<div style="padding:0 %dpx 0 %dpx"><div class="b" style="height:56px">%s<div><div class="t">%s</div><div class="s">%s</div></div></div></div>' % (r, l, icon_html(i), t, s), w, 56)
 
 
 def link_buttons():
@@ -233,15 +237,14 @@ def core_stack():
 
 # ───────── README ─────────
 def readme(stack_w):
-    img = lambda f, w, alt: '<img src="assets/%s.png" width="%d" alt="%s"/>' % (f, w, alt)
+    pct = lambda px: ('%.2f' % (int(px * 10000 / CW) / 100)).rstrip('0').rstrip('.') + '%'  # 내림: 합이 100%를 넘지 않게
+    img = lambda f, px, alt: '<img src="assets/%s.png" width="%s" alt="%s"/>' % (f, pct(px), alt)
     a = lambda href, inner: '<a href="%s">%s</a>' % (href, inner)
-    out = ['<p>%s</p>' % img('header', CW, '김주우 · Infra · Backend Engineer'), '',
-           '<p align="center">']
-    for i, row in enumerate(TOP):
-        if i:
-            out.append('  <br/>')
-        out += ['  ' + a(href, img('btn-' + k, 248, '%s %s' % (t, s))) for k, _, t, s, href in row]
+    out = ['<p>%s</p>' % img('header', CW, '김주우 · Infra · Backend Engineer'), '', '<p>']
+    for i, row in enumerate(TOP):  # 버튼 사이에 공백이 없어야 세 개가 한 줄에 맞는다
+        out.append(('<br/>' if i else '') + ''.join(a(href, img('btn-' + k, BTN_COL[c][0], '%s %s' % (t, s))) for c, (k, _, t, s, href) in enumerate(row)))
     out += ['</p>', '', '<br/>', '', img('sec-education', CW, 'Education'), '', img('edu', CW, 'Education'), '', '<br/>', '',
+            img('sec-stack', CW, 'Core Stack'), '', img('core-stack', CW, 'Core Stack'), '', '<br/>', '',
             img('sec-projects', CW, 'Projects'), '']
     for p in PROJECTS:
         out += [img('proj-' + p['key'], CW, p['name']), '',
@@ -249,15 +252,14 @@ def readme(stack_w):
                 img('stack-' + p['key'], stack_w[p['key']], p['name'] + ' 기술 스택'), '']
         out += ['- ' + b for b in p['bullets']]
         out += ['', '<br/>', '']
-    out += [img('sec-awards', CW, 'Awards'), '', img('awards', CW, 'Awards'), '', '<br/>', '',
-            img('sec-stack', CW, 'Core Stack'), '', img('core-stack', CW, 'Core Stack'), '']
+    out += [img('sec-awards', CW, 'Awards'), '', img('awards', CW, 'Awards'), '']
     open(os.path.join(ROOT, 'README.md'), 'w', encoding='utf-8').write('\n'.join(out))
 
 
 if __name__ == '__main__':
-    if '--all' in sys.argv:  # 헤더 · 위쪽 버튼은 승인본(drafts/header-A)을 그대로 둔다
+    if '--all' in sys.argv:  # 헤더는 승인본(drafts/header-A2.html)을 그대로 쓴다
         header()
-        top_buttons()
+    top_buttons()
     link_buttons()
     for k in SECTIONS:
         section(k)
