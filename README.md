@@ -22,7 +22,7 @@
 
 <img src="assets/proj-newlearn.png" width="920" alt="NEW:LEARN"/>
 
-<p><a href="https://newlearn.io.kr"><img src="assets/link-website.png" width="146" alt="Website"/></a> <a href="https://newlearn-issue.vercel.app/home"><img src="assets/link-demo.png" width="146" alt="Demo"/></a> <a href="https://github.com/a102-NEWLEARN/NEW-LEARN"><img src="assets/link-github.png" width="146" alt="GitHub"/></a></p>
+<p><a href="https://newlearn-issue.vercel.app/home"><img src="assets/link-demo.png" width="146" alt="Demo"/></a> <a href="https://github.com/a102-NEWLEARN/NEW-LEARN"><img src="assets/link-github.png" width="146" alt="GitHub"/></a></p>
 
 <img src="assets/stack-newlearn.png" width="736" alt="NEW:LEARN 기술 스택"/>
 

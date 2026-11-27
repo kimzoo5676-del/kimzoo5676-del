@@ -79,7 +79,7 @@ S = lambda f, l: (f, l)
 PROJECTS = [
     dict(key='newlearn', logo='newlearn.png', name='NEW:LEARN', sub='뉴스를 AI로 구조화해 사건과 이슈의 흐름으로 보여 주는 서비스',
          period='2026.10 – 2026.11', chips=['SSAFY 2학기 · 6인', 'Infra · BE'],
-         links=[('website', 'https://newlearn.io.kr'), ('demo', 'https://newlearn-issue.vercel.app/home'), ('github', 'https://github.com/a102-NEWLEARN/NEW-LEARN')],
+         links=[('demo', 'https://newlearn-issue.vercel.app/home'), ('github', 'https://github.com/a102-NEWLEARN/NEW-LEARN')],
          stack=[S('java.svg', 'Java'), S('spring.svg', 'Spring Boot'), S('postgresql.svg', 'PostgreSQL'), S('redis.svg', 'Redis'), S('kubernetes.svg', 'Kubernetes'), S('argocd.svg', 'Argo CD'), S('terraform.svg', 'Terraform')],
          bullets=[
              '**클러스터 구성** — 서버 2대를 WireGuard로 연결해 kubeadm 클러스터 하나로 운영, EC2 · 보안 그룹 · 백업 S3 버킷은 Terraform으로 관리',
