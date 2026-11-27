@@ -1,24 +1,13 @@
-![header](https://capsule-render.vercel.app/api?type=soft&color=660033&height=200&section=header&text=joowoo%27s%20github&fontSize=40&fontColor=ffffff&fontAlignY=38&animation=fadeIn&desc=Infra%20%C2%B7%20Backend&descSize=16&descAlignY=65)
+<p align="center"><img src="assets/header.png" width="100%" alt="김주우 · Infra · Backend Engineer"/></p>
 
 <p align="center">
-  <a href="https://kimzoo5676-del.github.io/">
-    <img src="https://img.shields.io/badge/Portfolio-660033?style=for-the-badge&logo=githubpages&logoColor=white" alt="Portfolio"/>
-  </a>
-  <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-infra-portfolio.pdf">
-    <img src="https://img.shields.io/badge/Cloud%20Engineer%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="Cloud Engineer Portfolio PDF"/>
-  </a>
-  <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-sw-portfolio.pdf">
-    <img src="https://img.shields.io/badge/Software%20Engineer%20Portfolio%20PDF-800020?style=for-the-badge&logo=files&logoColor=white" alt="Software Engineer Portfolio PDF"/>
-  </a>
-  <a href="https://velog.io/@zooouu/posts">
-    <img src="https://img.shields.io/badge/Velog-20C997?style=for-the-badge&logo=velog&logoColor=white" alt="Velog"/>
-  </a>
-  <a href="https://zoolog.site/">
-    <img src="https://img.shields.io/badge/Zoolog-660033?style=for-the-badge&logo=googlechrome&logoColor=white" alt="Zoolog"/>
-  </a>
-  <a href="mailto:kimzoo5676@gmail.com">
-    <img src="https://img.shields.io/badge/Gmail-EA4335?style=for-the-badge&logo=gmail&logoColor=white" alt="Gmail"/>
-  </a>
+  <a href="https://kimzoo5676-del.github.io/"><img src="assets/btn-site.png" width="248" alt="Portfolio Site"/></a>
+  <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-infra-portfolio.pdf"><img src="assets/btn-ce.png" width="248" alt="Cloud Engineer Portfolio PDF"/></a>
+  <a href="https://github.com/kimzoo5676-del/kimzoo5676-del.github.io/raw/main/pdf/kimjoowoo-sw-portfolio.pdf"><img src="assets/btn-sw.png" width="248" alt="Software Engineer Portfolio PDF"/></a>
+  <br/>
+  <a href="https://zoolog.site/"><img src="assets/btn-zoolog.png" width="248" alt="Zoolog Tech Blog"/></a>
+  <a href="https://velog.io/@zooouu/posts"><img src="assets/btn-velog.png" width="248" alt="Velog"/></a>
+  <a href="mailto:kimzoo5676@gmail.com"><img src="assets/btn-mail.png" width="248" alt="Email"/></a>
 </p>
 
 ---
@@ -51,7 +40,9 @@
 > 뉴스를 AI로 구조화해 **사건과 이슈의 흐름**으로 보여 주는 서비스.
 > SSAFY 2학기 프로젝트 · 6인 팀.
 
-**Role** · Infra · BE &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `PostgreSQL` `Redis` `Kubernetes(kubeadm)` `Argo CD` `GitLab CI` `Terraform` `Prometheus` `Grafana` `AWS`
+**Role** · Infra · BE
+
+<img src="assets/stack-newlearn.png" width="690" alt="newlearn 기술 스택"/>
 
 - **클러스터 구성** — 서버 2대를 WireGuard로 연결해 kubeadm 클러스터 하나로 운영, EC2 · 보안 그룹 · 백업 S3 버킷은 Terraform으로 관리
 - **GitOps 배포** — MR 검사 → 이미지 빌드(Kaniko) → 배포 태그 MR → Argo CD 동기화, 롤백은 `git revert`
@@ -79,7 +70,9 @@
 > 방을 만들어 팀이 **목표 기간 동안 할 일 · 일정 · 자료를 공유**하는 iOS 협업 앱.
 > App Store 출시 후 운영 중.
 
-**Role** · Infra · BE · AI &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `FastAPI` `PostgreSQL` `Redis` `Docker` `GitHub Actions` `Caddy` `Oracle Cloud`
+**Role** · Infra · BE · AI
+
+<img src="assets/stack-modi.png" width="690" alt="modi 기술 스택"/>
 
 
 - **CI/CD** — Oracle Cloud(ARM) 이관과 함께 GitHub Actions 워크플로로 재구성, 테스트를 통과한 코드만 배포
@@ -107,7 +100,9 @@
 > 공부한 글을 **주제별 그래프와 달력**으로 정리하는 개인 기술 블로그.
 > 2026.10부터 운영 중.
 
-**Role** · Infra · Full-Stack &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `PostgreSQL` `React` `TypeScript` `k3s` `Argo CD` `GitHub Actions` `Caddy` `AWS Lightsail`
+**Role** · Infra · Full-Stack
+
+<img src="assets/stack-zoolog.png" width="592" alt="zoolog 기술 스택"/>
 
 - **GitOps 배포** — GitHub Actions(통합 테스트 → 이미지 빌드 → 매니페스트 태그 커밋)와 Argo CD로 k3s에 배포, 롤백은 `git revert`
 - **로그인** — Google OIDC와 허용 이메일 하나로 본인만 글을 쓰게 하고, 서버 세션과 CSRF 보호 적용
@@ -131,7 +126,9 @@
 > 은행 심사 담당자가 스타트업 법인의 서류 10종을 심사할 때 **서류 판독 → 서류 간 대조 → 위험 점검 → 등급 · 한도 → 심사의견서 초고**까지 보조하는 AI 서비스.
 > SSAFY 2학기 프로젝트 · 5인 팀.
 
-**Role** · Infra · BE &nbsp;&nbsp;|&nbsp;&nbsp; `Spring Boot` `Spring Security` `PostgreSQL` `Docker Swarm` `Jenkins` `GitLab CI` `Prometheus` `Grafana` `AWS Lightsail`
+**Role** · Infra · BE
+
+<img src="assets/stack-yeobo.png" width="592" alt="yeobo 기술 스택"/>
 
 - **무중단 배포 · CI/CD** — Docker Swarm start-first 무중단 배포, Jenkins 자동 배포와 롤백, GitLab Runner CI 게이트(포맷 · 린트 · 테스트 · 빌드 · 시크릿 스캔)
 - **관측** — Prometheus · Loki · Grafana로 지표와 컨테이너 로그를 수집해 운영 대시보드 구성
@@ -156,7 +153,9 @@
 > 생성형 AI와 금융 데이터를 활용해 사용자에게 맞는 예·적금 상품을 추천하는 로보 어드바이저 서비스.
 > **SSAFY 1학기 관통 프로젝트 최우수상 (서울2반 1등).**
 
-**Role** · Infra · BE · AI &nbsp;&nbsp;|&nbsp;&nbsp; `Django` `DRF` `Vue.js` `SQLite` `GitHub Actions` `AWS EC2`
+**Role** · Infra · BE · AI
+
+<img src="assets/stack-ourwish.png" width="592" alt="ourwish 기술 스택"/>
 
 - **배포** — GitHub Actions로 CI/CD를 구성하고 AWS EC2(Nginx · Gunicorn)에 배포, 헬스체크 실패 시 직전 커밋으로 롤백
 - **REST API · DB 설계** — DRF로 REST API와 JWT 인증 구현, 회원 · 상품 · 가입 · 찜 · 커뮤니티 5개 도메인 ERD 모델링
@@ -174,53 +173,6 @@
 
 ---
 
-## 🛠 Tech Stack
+## 🛠 Core Stack
 
-**Language**  
-![Python](https://img.shields.io/badge/Python-3776AB?style=for-the-badge&logo=python&logoColor=white)
-![Java](https://img.shields.io/badge/Java-007396?style=for-the-badge&logo=openjdk&logoColor=white)
-![TypeScript](https://img.shields.io/badge/TypeScript-3178C6?style=for-the-badge&logo=typescript&logoColor=white)
-
-**Backend**  
-![Django](https://img.shields.io/badge/Django-092E20?style=for-the-badge&logo=django&logoColor=white)
-![FastAPI](https://img.shields.io/badge/FastAPI-009688?style=for-the-badge&logo=fastapi&logoColor=white)
-![Spring Boot](https://img.shields.io/badge/Spring%20Boot-6DB33F?style=for-the-badge&logo=springboot&logoColor=white)
-
-**AI**  
-![LangChain](https://img.shields.io/badge/LangChain-1C3C3C?style=for-the-badge&logo=langchain&logoColor=white)
-![LangGraph](https://img.shields.io/badge/LangGraph-1C3C3C?style=for-the-badge&logoColor=white)
-
-**Database & Storage**  
-![SQLite](https://img.shields.io/badge/SQLite-003B57?style=for-the-badge&logo=sqlite&logoColor=white)
-![PostgreSQL](https://img.shields.io/badge/PostgreSQL-4169E1?style=for-the-badge&logo=postgresql&logoColor=white)
-![Redis](https://img.shields.io/badge/Redis-FF4438?style=for-the-badge&logo=redis&logoColor=white)
-![MinIO](https://img.shields.io/badge/MinIO-C72E49?style=for-the-badge&logo=minio&logoColor=white)
-![Flyway](https://img.shields.io/badge/Flyway-CC0200?style=for-the-badge&logo=flyway&logoColor=white)
-
-**Infra & Cloud**  
-![Docker](https://img.shields.io/badge/Docker-2496ED?style=for-the-badge&logo=docker&logoColor=white)
-![Kubernetes](https://img.shields.io/badge/Kubernetes-326CE5?style=for-the-badge&logo=kubernetes&logoColor=white)
-![K3s](https://img.shields.io/badge/K3s-FFC61C?style=for-the-badge&logo=k3s&logoColor=black)
-![Terraform](https://img.shields.io/badge/Terraform-844FBA?style=for-the-badge&logo=terraform&logoColor=white)
-![Prometheus](https://img.shields.io/badge/Prometheus-E6522C?style=for-the-badge&logo=prometheus&logoColor=white)
-![Grafana](https://img.shields.io/badge/Grafana-F46800?style=for-the-badge&logo=grafana&logoColor=white)
-![Argo CD](https://img.shields.io/badge/Argo%20CD-EF7B4D?style=for-the-badge&logo=argo&logoColor=white)
-![AWS](https://img.shields.io/badge/AWS-FF9900?style=for-the-badge&logoColor=white)
-![Oracle Cloud](https://img.shields.io/badge/Oracle%20Cloud-F80000?style=for-the-badge&logo=oracle&logoColor=white)
-![Linux](https://img.shields.io/badge/Linux-FCC624?style=for-the-badge&logo=linux&logoColor=black)
-![GitHub Actions](https://img.shields.io/badge/GitHub%20Actions-2088FF?style=for-the-badge&logo=githubactions&logoColor=white)
-![GitLab CI](https://img.shields.io/badge/GitLab%20CI-FC6D26?style=for-the-badge&logo=gitlab&logoColor=white)
-![Jenkins](https://img.shields.io/badge/Jenkins-D24939?style=for-the-badge&logo=jenkins&logoColor=white)
-![Nginx](https://img.shields.io/badge/Nginx-009639?style=for-the-badge&logo=nginx&logoColor=white)
-![Caddy](https://img.shields.io/badge/Caddy-1F88C0?style=for-the-badge&logo=caddy&logoColor=white)
-![Tailscale](https://img.shields.io/badge/Tailscale-242424?style=for-the-badge&logo=tailscale&logoColor=white)
-![Firebase](https://img.shields.io/badge/Firebase-DD2C00?style=for-the-badge&logo=firebase&logoColor=white)
-
-**Test**  
-![JUnit5](https://img.shields.io/badge/JUnit5-25A162?style=for-the-badge&logo=junit5&logoColor=white)
-![Testcontainers](https://img.shields.io/badge/Testcontainers-291A3F?style=for-the-badge&logoColor=white)
-![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=for-the-badge&logo=pytest&logoColor=white)
-
-**Tools**  
-![Git](https://img.shields.io/badge/Git-F05032?style=for-the-badge&logo=git&logoColor=white)
-![Jira](https://img.shields.io/badge/Jira-0052CC?style=for-the-badge&logo=jira&logoColor=white)
+<img src="assets/core-stack.png" width="900" alt="Core Stack"/>
